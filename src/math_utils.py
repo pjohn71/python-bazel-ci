@@ -1,3 +1,6 @@
+"""Module providing a function printing python version."""
+
+
 def add(a, b):
     """
     Add two numbers and return the result.

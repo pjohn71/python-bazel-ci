@@ -1,3 +1,6 @@
+"""Module providing a function printing python version."""
+
+
 def reverse_string(s):
     """
     Reverse a string and return the result.
