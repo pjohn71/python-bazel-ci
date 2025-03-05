@@ -22,5 +22,3 @@ sh_test(
     ],
      size = "small",
 )
-
-exports_files(["requirements.txt"])

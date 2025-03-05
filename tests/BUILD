@@ -1,12 +1,5 @@
-load("@pytest//:requirements.bzl", "requirement")
-py_library(
-    name = "test_utils",
-    srcs = glob(["*.py"]),
-    visibility = ["//visibility:public"],
-    deps = [
-        requirement("pytest")
-    ]
-)
+load("@rules_python//python:defs.bzl", "py_test")
+
 
 py_test(
     name = "test_math_utils",
@@ -15,9 +8,9 @@ py_test(
         "//src:math_utils",
     ],
     # Use pytest instead of the default test runner
-    main = "test_math_utils.py",
-    python_version = "PY3",
-    srcs_version = "PY3",
+    # main = "test_math_utils.py",
+    # python_version = "PY3",
+    # srcs_version = "PY3",
 )
 
 py_test(
@@ -27,9 +20,9 @@ py_test(
         "//src:string_utils",
     ],
     # Use pytest instead of the default test runner
-    main = "test_string_utils.py",
-    python_version = "PY3",
-    srcs_version = "PY3",
+    # main = "test_string_utils.py",
+    # python_version = "PY3",
+    # srcs_version = "PY3",
 )
 
 filegroup(
